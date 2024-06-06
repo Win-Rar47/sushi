@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://wallpapergod.com/images/hd/sushi-1920X1080-wallpaper-xr24xtbzn2i53aax.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .head {
+  height: 10vh;
+  width: 95%;
+  display: flex;
+}
+header .head .start {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+header .head .start .bigger {
+  margin-top: 10px;
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+header .head .start .big {
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+  margin-left: 5px;
+  text-wrap: nowrap;
+}
+header .head .nav {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .head .nav .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+header .head .nav .navbar button.navbar-toggler {
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.438);
+}
+header .head .nav .navbar .nav-link {
+  font-size: 20px;
+}
+header .head .nav .navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .head-info {
+  width: 95%;
+  height: 70vh;
+  display: flex;
+}
+header .head-info .col-md-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+header .head-info .col-md-1 a {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+header .head-info .col-md-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(243, 243, 243);
+  text-align: center;
+}
+header .head-info .col-md-10 h1, header .head-info .col-md-10 h4, header .head-info .col-md-10 p {
+  text-shadow: 1px 1px 2px black;
+}
+header .head-info .col-md-10 link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+header .arrow {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .arrow div {
+  position: absolute;
+  z-index: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(180, 180, 180);
+  animation: circle 5s linear infinite;
+}
+header .arrow a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.795);
+  animation: arrow 5s linear infinite;
+}
+header .arrow a img {
+  margin-top: 8px;
+  width: 40px;
+  height: 40px;
+}
+header .arrow a:hover {
+  background-color: rgb(100, 100, 100);
+  transition: 0.6s;
+}
+header .shop {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 90vh;
+}
+header .shop button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+header .shop button img {
+  width: 50px;
+}
+
+@keyframes arrow {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 6px;
+  }
+  20% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    scale: 100%;
+    opacity: 1;
+  }
+  10% {
+    scale: 200%;
+    opacity: 0.5;
+  }
+  20% {
+    scale: 200%;
+    opacity: 0;
+  }
+  100% {
+    scale: 120%;
+    opacity: 0;
+  }
+}
+main {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(69, 172, 219);
+  display: flex;
+}
+main .img {
+  width: 45%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+main .img img {
+  width: 300px;
+}
+main .info {
+  padding-left: 1%;
+  width: 55%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(243, 243, 243);
+  text-shadow: 1px 1px 2px black;
+}
+main .info div {
+  margin-top: 15px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+main .info div button {
+  border: none;
+  background-color: transparent;
+}
+main .info div button img {
+  width: 160px;
+}
+
+@media (min-width: 500px) {
+  .col-md-10 {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .info div {
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .col-md-10 {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+  .col-md-1 {
+    position: absolute;
+    margin-top: 50vh;
+  }
+  .info div {
+    flex-direction: column;
+  }
+  .info div button {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .text h2 {
+    font-size: 28px;
+  }
+  .text .btn {
+    justify-content: center;
+  }
+  .text .btn button {
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .text .meal {
+    margin-bottom: 20px;
+  }
+  .text .meal h3 {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .text h2 {
+    font-size: 20px;
+  }
+  .text .btn {
+    padding-left: 10%;
+    justify-content: flex-start;
+  }
+  .text .btn button {
+    width: 100px;
+    height: 40px;
+  }
+  .text .meal h3 {
+    font-size: 15px;
+  }
+}
+footer {
+  width: 100%;
+  min-height: 110vh;
+  max-height: 360vh;
+  background-color: rgb(69, 172, 219);
+}
+footer .col-md-12 {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer .col-md-12 h1 {
+  text-shadow: 1px 1px 2px black;
+}
+footer .col-md-12 div {
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+footer .col-md-12 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  max-width: 240px;
+  height: 40px;
+  border: 2px solid red;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  margin: 5px;
+  padding: 5px;
+}
+footer .col-md-12 a:hover {
+  color: black;
+  border: 1px solid black;
+  transition: 0.3s;
+  scale: 101%;
+}
+footer .col-lg-3 {
+  display: flex;
+  margin-top: 30px;
+}
+footer .col-lg-3 .block {
+  width: 100%;
+  min-height: 500px;
+  max-height: 90vh;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+footer .col-lg-3 .block .sushi {
+  width: 100%;
+  height: 55%;
+}
+footer .col-lg-3 .block .sushi img {
+  width: 80%;
+  margin: 10%;
+}
+footer .col-lg-3 .block .text {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+}
+footer .col-lg-3 .block .text h2 {
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+footer .col-lg-3 .block .text .meal {
+  width: 100%;
+  height: 90px;
+}
+footer .col-lg-3 .block .text .meal h3 {
+  margin-right: 5%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+footer .col-lg-3 .block .text .info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+footer .col-lg-3 .block .text .btn {
+  margin-top: 5px;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+}
+footer .col-lg-3 .block .text .btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  color: red;
+  background-color: transparent;
+}
+footer .col-lg-3 .block .text .btn button:hover {
+  color: black;
+  border: 2px solid black;
+  transition: 0.3s;
+  scale: 102%;
+}
+footer .col-lg-3 .block:hover {
+  scale: 102%;
+  transition: 0.3s;
+}/*# sourceMappingURL=sushi.css.map */
